@@ -39,6 +39,12 @@ object TestBuild1 : BuildType({
 
 object Developer : Project({
     name = "Developer"
+
+    buildType(Developer_DeveloperBuild)
+})
+
+object Developer_DeveloperBuild : BuildType({
+    name = "Developer Build"
 })
 
 
