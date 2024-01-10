@@ -76,4 +76,12 @@ object Release : Project({
 
 object Release_ReleaseBuild : BuildType({
     name = "Release Build"
+
+    steps {
+        script {
+            name = "echo"
+            id = "echo"
+            scriptContent = """echo "test""""
+        }
+    }
 })
