@@ -28,6 +28,7 @@ version = "2023.11"
 project {
 
     subProject(Official)
+    subProject(Release)
     subProject(Developer)
 }
 
@@ -64,4 +65,9 @@ object Official : Project({
 
 object Official_OfficialBuild : BuildType({
     name = "Official Build"
+})
+
+
+object Release : Project({
+    name = "Release"
 })
