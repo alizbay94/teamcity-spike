@@ -59,4 +59,10 @@ object Developer_DeveloperBuild : BuildType({
 
 object Official : Project({
     name = "Official"
+
+    buildType(Official_OfficialBuild)
+})
+
+object Official_OfficialBuild : BuildType({
+    name = "Official Build"
 })
