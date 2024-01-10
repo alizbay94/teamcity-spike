@@ -27,15 +27,9 @@ version = "2023.11"
 
 project {
 
-    buildType(TestBuild1)
-
     subProject(Official)
     subProject(Developer)
 }
-
-object TestBuild1 : BuildType({
-    name = "Test Build 1"
-})
 
 
 object Developer : Project({
