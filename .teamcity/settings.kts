@@ -47,6 +47,11 @@ object Developer_DeveloperBuild : BuildType({
             id = "Echoe"
             scriptContent = """echoe "test""""
         }
+        script {
+            name = "Echo Again"
+            id = "Echo_Again"
+            scriptContent = """echo "Again""""
+        }
     }
 })
 
