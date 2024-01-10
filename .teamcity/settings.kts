@@ -27,8 +27,15 @@ version = "2023.11"
 project {
 
     buildType(TestBuild1)
+
+    subProject(Official)
 }
 
 object TestBuild1 : BuildType({
     name = "Test Build 1"
+})
+
+
+object Official : Project({
+    name = "Official"
 })
