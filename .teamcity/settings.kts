@@ -43,7 +43,7 @@ object Developer_DeveloperBuild : BuildType({
 
     steps {
         script {
-            name = "Echoe"
+            name = "Echo"
             id = "Echoe"
             scriptContent = """echoe "test""""
         }
