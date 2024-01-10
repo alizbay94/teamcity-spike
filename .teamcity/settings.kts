@@ -70,4 +70,10 @@ object Official_OfficialBuild : BuildType({
 
 object Release : Project({
     name = "Release"
+
+    buildType(Release_ReleaseBuild)
+})
+
+object Release_ReleaseBuild : BuildType({
+    name = "Release Build"
 })
