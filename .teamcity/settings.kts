@@ -27,10 +27,16 @@ version = "2023.11"
 
 project {
 
+    buildType(UnitAndIntegrationTests)
+
     subProject(Official)
     subProject(Release)
     subProject(Developer)
 }
+
+object UnitAndIntegrationTests : BuildType({
+    name = "Unit and Integration Tests"
+})
 
 
 object Developer : Project({
